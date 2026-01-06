@@ -29,3 +29,25 @@ const myFunction = function(){
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp); //even if it carries null the type is object cuz its aready in js documentation 
 console.log(typeof myFunction); //returns function cuz its a function
+
+//type of memory
+//Stack memory(used in primitive) ,Heap memory(used in non primitive data  type)
+
+//use of stack
+let myYoutubeName ="swostikabajagain";
+let anotherName = myYoutubeName;
+anotherName = "pihu"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+//use of heap
+let userOne = {
+    email : " pihu@gmail",
+    nid : "01234"
+}
+
+let userTwo =userOne;
+userTwo.email ="damian@gmail.com"
+
+console.log (userOne.email);
+console.log (userTwo.email);
